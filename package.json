@@ -1,6 +1,6 @@
 {
   "name": "karlpokus.github.io",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "automating things",
   "main": "build.js",
   "scripts": {
@@ -12,7 +12,8 @@
   },
   "keywords": [
     "automation",
-    "randomness"
+    "randomness",
+    "SSR"
   ],
   "author": "Karl Pokus <karl.pokus@gmail.com> (https://github.com/karlpokus)",
   "license": "MIT",

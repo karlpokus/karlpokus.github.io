@@ -3,18 +3,19 @@ The simplest blogging tool I can make. *Everything* is pre-rendered per github r
 
 # build
 ```
-$ npm run build -- -n [posts per page]
+$ node build.js -n [posts per page]
 ```
 
 # features
 - SSR
-- n posts @/
-- n + n posts @/2
+- n posts @ /
+- next n posts @ /public/page[n].html
 
 # todos
 - [x] get n posts
-- [ ] sort posts by date
+- [x] sort posts by date
 - [x] parse markdown
-- [x] append posts to index.html
-- [x] write to index.html
+- [x] build page(s)
 - [ ] add hash to url on title click
+- [ ] build paginator
+- [x] remove old files before build
