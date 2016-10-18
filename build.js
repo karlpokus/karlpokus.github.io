@@ -73,10 +73,13 @@ function groupFiles(collection, n) {
 }
 
 function done() {
+  console.timeEnd('buildtime');
   console.log('done');
 }
 
 function clean(cb) {
+  console.time('buildtime');
+  
   glob('public/*', function (err, files) {
     files.forEach(function(file){
       fs.unlinkSync(file);
