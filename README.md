@@ -1,5 +1,10 @@
 # karlpokus.github.io
-The simplest bloggin tool I can make. All about automation. A work in progress.
+The simplest blogging tool I can make. *Everything* is pre-rendered per github rules. The content is all about automation. A work in progress.
+
+# build
+```
+$ npm run build -- -n [posts per page]
+```
 
 # features
 - SSR
@@ -12,3 +17,4 @@ The simplest bloggin tool I can make. All about automation. A work in progress.
 - [x] parse markdown
 - [x] append posts to index.html
 - [x] write to index.html
+- [ ] add hash to url on title click
