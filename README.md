@@ -1,5 +1,4 @@
-# karlpokus.github.io
-The simplest blogging tool I can make. *Everything* is pre-rendered per github rules. The content is all about automation. A work in progress.
+The simplest blogging tool I can make under these constraints. *Everything* is pre-rendered per github rules. The content is all about automation. A work in progress.
 
 # build
 ```

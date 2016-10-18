@@ -77,7 +77,7 @@ function done() {
 }
 
 function clean(cb) {
-  glob('public/*.html', function (err, files) {
+  glob('public/*', function (err, files) {
     files.forEach(function(file){
       fs.unlinkSync(file);
     });
