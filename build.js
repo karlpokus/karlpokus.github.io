@@ -39,8 +39,41 @@ function sortAndStrip(collection) {
     });
 }
 
-function buildPage(html, i) { 
+function buildPaginator(i, n) {
+  var html;
+  
+  // only one page
+  if (n === 1) { 
+    html = '';
+  }
+  // page 1 of multiple pages  
+  if (i === 0 && n > 1) { 
+    html = '<a href="/public/page1.html">Next &rarr;</a>';    
+  }
+  // page 2 of 2 pages
+  if (i === 1 && n === 2) {
+    html = '<a href="/">&larr; Prev</a>';
+  }
+  // page 2 of 2+ pages
+  if (i === 1 && n > 2) {
+    html = '<a href="/">&larr; Prev</a> | ';
+    html += '<a href="/public/page' + (i+1) + '.html">Next &rarr;</a>';
+  }
+  // page > 2 && not last of 2+ pages
+  if (i > 1 && i < (n-1) && n > 2) {
+    html = '<a href="/public/page' + (i-1) + '.html">&larr; Prev</a> | ';
+    html += '<a href="/public/page' + (i+1) + '.html">Next &rarr;</a>';
+  }
+  // last page of 2+ pages
+  if (i > 1 && i === (n-1) && n > 2) {
+    html = '<a href="/public/page' + (i-1) + '.html">&larr; Prev</a>';
+  }
+  return html;
+}
+
+function buildPage(html, i, n) { 
   var posts = html.join(''),
+      paginator = buildPaginator(i, n),
       base = '';
   
   // ideally -> reader.pipe(applyPosts).pipe(writer)
@@ -51,9 +84,9 @@ function buildPage(html, i) {
     .on('end', function(){
       var $ = cheerio.load(base);
       $('.content').append(posts);
-
+      $('.paginator').append(paginator);
+      
       var outFile = (i > 0)? './public/page' + i + '.html': 'index.html';
-    
       fs.createWriteStream(outFile)
         .end($.html(), 'utf8'); // cb
     });
@@ -80,10 +113,14 @@ function done() {
 function clean(cb) {
   console.time('buildtime');
   
+  function removeFile(file) {
+    fs.unlinkSync(file);
+  }
+  
   glob('public/*', function (err, files) {
-    files.forEach(function(file){
-      fs.unlinkSync(file);
-    });
+    if (files.length > 0) {
+      files.forEach(removeFile);
+    }
     cb();
   });
 }
@@ -95,15 +132,16 @@ function main() {
     parseFiles(files, function(err, html){ // parse text to html + ts
       if (err) throw err;
 
-      html = sortAndStrip(html);
+      var posts = sortAndStrip(html);
       
-      if (html.length > postsPerPage) { // group
-        var group = groupFiles(html, postsPerPage);
-        group.forEach(function(arr, i){
-          buildPage(arr, i);
+      if (posts.length > postsPerPage) { // group
+        var pages = groupFiles(posts, postsPerPage);
+        pages.forEach(function(page, i){
+          buildPage(page, i, pages.length);
         });
+        
       } else { // only build index
-        buildPage(arr, 0);
+        buildPage(posts, 0, 1);
       }
       done();
     });
