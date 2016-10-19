@@ -1,0 +1,4 @@
+# randomize your cooking
+Use [butler bot](https://trello.com/butlerbot) to randomize meals from a Trello board. Add him to your board and put the follwing in a card title.
+
+> every friday at [time], move [n] randomly-selected cards from list "Meals" to list "Cook this weekend"

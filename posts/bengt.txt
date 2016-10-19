@@ -1,0 +1,2 @@
+# bengt ♥ csv
+A friendly data munger for your csv. Group, filter and export to file - all in the browser - for security concerns. Check him out on [github](https://github.com/karlpokus/bengt) or the [demo](http://s.codepen.io/KarlPokus/debug/7a796f207bb216bfeb286bdc2337dab0)

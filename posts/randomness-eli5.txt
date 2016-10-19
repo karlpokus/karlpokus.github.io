@@ -1,0 +1,5 @@
+# ELI5: Why is it impossible to generate truly random numbers with a computer?
+
+> The issue stems from the fact that there is nothing random about your computer..
+
+Read more on this [awesome thread](https://www.reddit.com/r/explainlikeimfive/comments/57k9a8/eli5_why_is_it_impossible_to_generate_truly/d8sojf5)

@@ -1,0 +1,2 @@
+# build your own Trello bot
+[Max](https://trello.com/maxblipblop) is a trello bot. He reminds users to include @username in comments to send them notifications. He also does some other things. Build your own with [trobot on github](https://github.com/karlpokus/trobot).

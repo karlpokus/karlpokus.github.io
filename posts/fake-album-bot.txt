@@ -1,0 +1,9 @@
+# randomly created album covers
+A bot for [r/fakealbumcovers](https://www.reddit.com/r/fakealbumcovers/). Needs some work. Particularly the fonts and their placement. Fork on [github](https://github.com/karlpokus/fakealbumcover-bot).
+
+the Rules
+- band name from https://en.wikipedia.org/wiki/Special:Random
+- album title from https://en.wikiquote.org/wiki/Special:Random
+- 5th img from https://www.flickr.com/explore/interesting/7days/
+
+![image](https://raw.githubusercontent.com/karlpokus/fakealbumcover-bot/master/imgs/test.jpg)
