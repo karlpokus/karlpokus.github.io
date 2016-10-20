@@ -1,4 +1,4 @@
 # diceman
 > It's the way a man chooses to limit himself that determines his character. A man without habits, consistency, redundancy - and hence boredom - is not human. He's insane.
 
-![image](https://s3-us-west-2.amazonaws.com/s.cdpn.io/32200/diceman_cover.jpg)
+![image](/assets/diceman_cover.jpg)

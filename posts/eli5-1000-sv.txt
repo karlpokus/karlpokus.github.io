@@ -1,0 +1,9 @@
+# automating ELI5
+The [demo](http://codepen.io/KarlPokus/debug/KgPVYb) features a whitelist of 1000 simple everyday words. Inspired by the beautiful [thing explainer](https://xkcd.com/thing-explainer/) but in Swedish - using [this](http://rl.se/tusen.html) whitelist.
+
+usage
+- add your text
+- get a blacklist
+- optionally replace blacklist with synonyms from [this](http://www.synonymer.se/) api that match the whitelist.
+
+Fork on [github](https://github.com/karlpokus/eli5)
