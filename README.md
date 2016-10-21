@@ -23,3 +23,4 @@ $ npm test [-- -p port]
 - [x] put css in head style
 - [x] 404 (nevermind - github won't use it)
 - [x] padding between posts
+- [ ] permalink from post title - requires parsing markdown on the client and filename to be title
