@@ -1,0 +1,9 @@
+# automatic agenda @company weekly meeting
+Assuming the company uses Trello for project management, prior to the weekly meeting - each team member adds a common label (like #meeting) to cards in any company board. Once at weekly meeting, use [tragenda](http://codepen.io/KarlPokus/debug/a1d690fc435a466bbf3637ac65ec193c) to search for cards by label. Voila! We have an agenda.
+
+usage @meeting
+- Prioritize by re-ordering cards
+- Click a card to open it in Trello (also marks the card as done - this does not alter any data in Trello)
+- A progressbar shows how many cards are left
+
+Works on mobile devices. Repo at [github](https://github.com/karlpokus/tragenda)

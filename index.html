@@ -18,15 +18,10 @@
     h1 {
       font-size:16px;
       font-weight:400;
-    }
-    h1, .paginator {
       margin-top:100px;
     }
-    p {}
-    code {
-      display:block;
-      padding:20px;
-      background:#eee;
+    .paginator {
+      margin:100px 0;
     }
     img {
       max-width:100%;
@@ -35,7 +30,18 @@
 </head>
 <body>
   <h1 id="header">automation &amp;&amp; randomness</h1>
-  <div class="content"><h1 id="automating-eli5">automating ELI5</h1>
+  <div class="content"><h1 id="automatic-agenda-company-weekly-meeting">automatic agenda @company weekly meeting</h1>
+<p>Assuming the company uses Trello for project management, prior to the weekly meeting - each team member adds a common label (like #meeting) to cards in any company board. Once at weekly meeting, use <a href="http://codepen.io/KarlPokus/debug/a1d690fc435a466bbf3637ac65ec193c">tragenda</a> to search for cards by label. Voila! We have an agenda.</p>
+<p>usage @meeting</p>
+<ul>
+<li>Prioritize by re-ordering cards</li>
+<li>Click a card to open it in Trello (also marks the card as done - this does not alter any data in Trello)</li>
+<li>A progressbar shows how many cards are left</li>
+</ul>
+<p>Works on mobile devices. Repo at <a href="https://github.com/karlpokus/tragenda">github</a></p>
+<h1 id="random-id">random id</h1>
+<script src="https://gist.github.com/karlpokus/10171d696b55c4cd8bad60a3014aabea.js"></script>
+<h1 id="automating-eli5">automating ELI5</h1>
 <p>The <a href="http://codepen.io/KarlPokus/debug/KgPVYb">demo</a> features a whitelist of 1000 simple everyday words. Inspired by the beautiful <a href="https://xkcd.com/thing-explainer/">thing explainer</a> but in Swedish - using <a href="http://rl.se/tusen.html">this</a> whitelist.</p>
 <p>usage</p>
 <ul>
@@ -44,16 +50,6 @@
 <li>optionally replace blacklist with synonyms from <a href="http://www.synonymer.se/">this</a> api that match the whitelist.</li>
 </ul>
 <p>Fork on <a href="https://github.com/karlpokus/eli5">github</a></p>
-<h1 id="automating-secretary-duty-company-weekly-meeting">automating secretary duty @company weekly meeting</h1>
-<p>n people take turns taking notes at the weekly meeting @company. Assuming a consistent group of people over time and no care for holidays - whose turn is it week x?</p>
-<script src="https://gist.github.com/karlpokus/436325a22c882a295ab92e7ec3d098b2.js"></script>
-
-<p>If one does not feel like running the function each week - <a href="https://github.com/karlpokus/max">Max</a> would be happy to help.</p>
-<h1 id="commit-message-generator">commit message generator</h1>
-<blockquote>
-<p>Refactored configuration</p>
-</blockquote>
-<p><a href="http://whatthecommit.com/">src</a></p>
 <h1 id="randomly-created-album-covers">randomly created album covers</h1>
 <p>A bot for <a href="https://www.reddit.com/r/fakealbumcovers/">r/fakealbumcovers</a>. Needs some work. Particularly the fonts and their placement. Fork on <a href="https://github.com/karlpokus/fakealbumcover-bot">github</a>.</p>
 <p>the Rules</p>
@@ -63,11 +59,11 @@
 <li>5th img from <a href="https://www.flickr.com/explore/interesting/7days/">flickr</a></li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/karlpokus/fakealbumcover-bot/master/imgs/test.jpg" alt="image"></p>
-<h1 id="eli5-why-is-it-impossible-to-generate-truly-random-numbers-with-a-computer-">ELI5: Why is it impossible to generate truly random numbers with a computer?</h1>
+<h1 id="commit-message-generator">commit message generator</h1>
 <blockquote>
-<p>The issue stems from the fact that there is nothing random about your computer..</p>
+<p>Refactored configuration</p>
 </blockquote>
-<p>Read more in this <a href="https://www.reddit.com/r/explainlikeimfive/comments/57k9a8/eli5_why_is_it_impossible_to_generate_truly/d8sojf5">awesome thread</a></p>
+<p><a href="http://whatthecommit.com/">src</a></p>
 </div>
   <p class="paginator"><a href="/public/page1.html">Next &#x2192;</a></p>
 </body>
