@@ -1,0 +1,4 @@
+# schedule meetings with a bot
+Let's say your in an e-mail thread with 1+ friends and you decide to meet up. Instead of going back and forth over when to schedule - add [clara](https://claralabs.com/) to the conversation and let her handle the details. Better yet - if everyone is signed up with clara - let them add her as well and let the bots talk to each other for maximum efficiancy!
+
+We took a stab at it with [MIRL](https://github.com/karlpokus/uppsala-hackathon-2016) at uppsala hackathon 2016.
