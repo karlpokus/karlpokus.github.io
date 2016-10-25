@@ -1,14 +1,19 @@
-The simplest blogging tool I can make under the constraints. *Everything* is pre-rendered per github rules. The content is all about automation. A work in progress.
+The simplest blogging tool I can make under the constraints. *Everything* is static files, so pre-rendered per github rules. The content is all about automation. A work in progress.
 
-# build && test
+# build
 ```
+# build
 $ npm run build [-- -n posts per page]
+# test
 $ npm test [-- -p port]
+# both
+$ npm run all
 ```
 
 # features
-- n posts @ /
-- next n posts @ /public/page[n].html
+- index with n posts @ /
+- page[n] with next n posts @ /public/page[n].html
+- assets @ /assets
 
 # todos
 - [x] get n posts
