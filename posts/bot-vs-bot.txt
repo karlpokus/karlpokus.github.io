@@ -1,2 +1,2 @@
 # bot vs bot
-![image](/assets/bot_vs_bot.png)
+![image](/assets/bot_vs_bot.jpg)
