@@ -32,11 +32,12 @@
 </head>
 <body>
   <h1 id="header">automation &amp;&amp; randomness</h1>
-  <div class="content"><h1 id="bot-vs-bot">bot vs bot</h1>
-<p><img src="/assets/bot_vs_bot.jpg" alt="image"></p>
-<h1 id="schedule-meetings-with-a-bot">schedule meetings with a bot</h1>
-<p>Let&apos;s say your in an e-mail thread with 1+ friends and you decide to meet up. Instead of going back and forth over when to schedule - add <a href="https://claralabs.com/">clara</a> to the conversation and let her handle the details. Better yet - if everyone is signed up with clara - let them add her as well and let the bots talk to each other for maximum efficiancy!</p>
-<p>We took a stab at it with <a href="https://github.com/karlpokus/uppsala-hackathon-2016">MIRL</a> at uppsala hackathon 2016.</p>
+  <div class="content"><h1 id="self-management">self-management</h1>
+<p>Automating certain behaviors to emit other behaviors. <a href="http://www.bfskinner.org">Skinner</a> was a master at this.</p>
+<blockquote>
+<p>Fred seemed to dispose of envelopes and junk mail in an especially efficient way/.../When he opened his mail in the morning, he usually positioned his chair and trash can so that the very slightest flick of his wrist did the job. This was no accident, and it was part of the reason he was able to reply to virtually every letter he ever received, even until the end.</p>
+</blockquote>
+<p><a href="http://people.whitman.edu/~herbrawt/classes/390/Epstein.pdf">src</a></p>
 <h1 id="automatic-agenda-company-weekly-meeting">automatic agenda @company weekly meeting</h1>
 <p>Assuming the company uses Trello for project management, prior to the weekly meeting - each team member adds a common label (like #meeting) to cards in any company board. Once at weekly meeting, use <a href="http://codepen.io/KarlPokus/debug/a1d690fc435a466bbf3637ac65ec193c">tragenda</a> to search for cards by label. Voila! We have an agenda.</p>
 <p>usage @meeting</p>
@@ -46,6 +47,25 @@
 <li>A progressbar shows how many cards are left</li>
 </ul>
 <p>Works on mobile devices. Repo at <a href="https://github.com/karlpokus/tragenda">github</a></p>
+<h1 id="schedule-meetings-with-a-bot">schedule meetings with a bot</h1>
+<p>Let&apos;s say your in an e-mail thread with 1+ friends and you decide to meet up. Instead of going back and forth over when to schedule - add <a href="https://claralabs.com/">clara</a> to the conversation and let her handle the details. Better yet - if everyone is signed up with clara - let them add her as well and let the bots talk to each other for maximum efficiancy!</p>
+<p>We took a stab at it with <a href="https://github.com/karlpokus/uppsala-hackathon-2016">MIRL</a> at uppsala hackathon 2016.</p>
+<h1 id="bot-vs-bot">bot vs bot</h1>
+<p><img src="/assets/bot_vs_bot.jpg" alt="image"></p>
+<h1 id="automating-eli5">automating ELI5</h1>
+<p>The <a href="http://codepen.io/KarlPokus/debug/KgPVYb">demo</a> features a whitelist of 1000 simple everyday words. Inspired by the beautiful <a href="https://xkcd.com/thing-explainer/">thing explainer</a> but in Swedish - using <a href="http://rl.se/tusen.html">this</a> whitelist.</p>
+<p>usage</p>
+<ul>
+<li>add your text</li>
+<li>get a blacklist</li>
+<li>optionally replace blacklist with synonyms from <a href="http://www.synonymer.se/">this</a> api that match the whitelist.</li>
+</ul>
+<p>Fork on <a href="https://github.com/karlpokus/eli5">github</a></p>
+<h1 id="automating-secretary-duty-company-weekly-meeting">automating secretary duty @company weekly meeting</h1>
+<p>n people take turns taking notes at the weekly meeting @company. Assuming a consistent group of people over time and no care for holidays - whose turn is it week x?</p>
+<script src="https://gist.github.com/karlpokus/436325a22c882a295ab92e7ec3d098b2.js"></script>
+
+<p>If one does not feel like running the function each week - <a href="https://github.com/karlpokus/max">Max</a> would be happy to help.</p>
 <h1 id="commit-message-generator">commit message generator</h1>
 <blockquote>
 <p>Refactored configuration</p>
@@ -60,6 +80,13 @@
 <li>5th img from <a href="https://www.flickr.com/explore/interesting/7days/">flickr</a></li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/karlpokus/fakealbumcover-bot/master/imgs/test.jpg" alt="image"></p>
+<h1 id="eli5-why-is-it-impossible-to-generate-truly-random-numbers-with-a-computer-">ELI5: Why is it impossible to generate truly random numbers with a computer?</h1>
+<blockquote>
+<p>The issue stems from the fact that there is nothing random about your computer..</p>
+</blockquote>
+<p>Read more in this <a href="https://www.reddit.com/r/explainlikeimfive/comments/57k9a8/eli5_why_is_it_impossible_to_generate_truly/d8sojf5">awesome thread</a></p>
+<h1 id="random-id">random id</h1>
+<script src="https://gist.github.com/karlpokus/10171d696b55c4cd8bad60a3014aabea.js"></script>
 </div>
   <p class="paginator"><a href="/public/page1.html">Next &#x2192;</a></p>
 </body>
