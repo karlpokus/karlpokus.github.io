@@ -7,8 +7,8 @@ var glob = require('glob'),
 
 function parseFiles(files, cb) {
   var out = [];
-  
-  files.forEach(function(file){  
+
+  files.forEach(function(file){
     var data = '';
     fs.createReadStream(file)
       .on('error', cb)
@@ -21,11 +21,11 @@ function parseFiles(files, cb) {
           ts: fs.statSync(file).mtime.getTime()
         };
         out.push(o);
-      
+
         if (out.length === files.length) {
           cb(null, out);
         }
-      });    
+      });
   });
 }
 
@@ -41,14 +41,14 @@ function sortAndStrip(collection) {
 
 function buildPaginator(i, n) {
   var html;
-  
+
   // only one page
-  if (n === 1) { 
+  if (n === 1) {
     html = '';
   }
-  // page 1 of multiple pages  
-  if (i === 0 && n > 1) { 
-    html = '<a href="/public/page1.html">Next &rarr;</a>';    
+  // page 1 of multiple pages
+  if (i === 0 && n > 1) {
+    html = '<a href="/public/page1.html">Next &rarr;</a>';
   }
   // page 2 of 2 pages
   if (i === 1 && n === 2) {
@@ -71,11 +71,11 @@ function buildPaginator(i, n) {
   return html;
 }
 
-function buildPage(html, i, n) { 
+function buildPage(html, i, n) {
   var posts = html.join(''),
       paginator = buildPaginator(i, n),
       base = '';
-  
+
   // ideally -> reader.pipe(applyPosts).pipe(writer)
   fs.createReadStream('./lib/base.html')
     .on('data', function(chunk){
@@ -85,7 +85,7 @@ function buildPage(html, i, n) {
       var $ = cheerio.load(base);
       $('.content').append(posts);
       $('.paginator').append(paginator);
-      
+
       var outFile = (i > 0)? './public/page' + i + '.html': 'index.html';
       fs.createWriteStream(outFile)
         .end($.html(), 'utf8'); // cb
@@ -97,7 +97,7 @@ function groupFiles(collection, n) {
       len = collection.length,
       chunk,
       out = [];
-  
+
   for (i; i < len; i += n) {
     chunk = collection.slice(i, (i+n));
     out.push(chunk);
@@ -107,16 +107,16 @@ function groupFiles(collection, n) {
 
 function done() {
   console.timeEnd('buildtime');
-  console.log('done');
+  console.log('build done');
 }
 
 function clean(cb) {
   console.time('buildtime');
-  
+
   function removeFile(file) {
     fs.unlinkSync(file);
   }
-  
+
   glob('public/*', function (err, files) {
     if (files.length > 0) {
       files.forEach(removeFile);
@@ -133,13 +133,13 @@ function main() {
       if (err) throw err;
 
       var posts = sortAndStrip(html);
-      
+
       if (posts.length > postsPerPage) { // group
         var pages = groupFiles(posts, postsPerPage);
         pages.forEach(function(page, i){
           buildPage(page, i, pages.length);
         });
-        
+
       } else { // only build index
         buildPage(posts, 0, 1);
       }
