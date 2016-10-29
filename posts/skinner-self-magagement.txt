@@ -1,0 +1,6 @@
+# self-management
+Automating certain behaviors to emit other behaviors. [Skinner](http://www.bfskinner.org) was a master at this.
+
+> Fred seemed to dispose of envelopes and junk mail in an especially efficient way/.../When he opened his mail in the morning, he usually positioned his chair and trash can so that the very slightest flick of his wrist did the job. This was no accident, and it was part of the reason he was able to reply to virtually every letter he ever received, even until the end.
+
+[src](http://people.whitman.edu/~herbrawt/classes/390/Epstein.pdf)
