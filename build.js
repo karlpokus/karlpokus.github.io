@@ -3,7 +3,7 @@ var glob = require('glob'),
     mark = require('marked'),
     cheerio = require('cheerio'),
     argv = require('minimist')(process.argv.slice(2)),
-    postsPerPage = argv.n || 5;
+    postsPerPage = argv.n || 10;
 
 function parseFiles(files, cb) {
   var out = [];
