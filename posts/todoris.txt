@@ -1,0 +1,9 @@
+# edit todos in local readme from the cli
+```
+list and toggle by index
+$ todoris
+
+add
+$ todoris 'add tests' npm
+```
+[repo](https://github.com/karlpokus/todoris)
