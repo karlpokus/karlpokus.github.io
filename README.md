@@ -1,13 +1,15 @@
 The simplest blogging tool I can make under the constraints. *Everything* is static files, so pre-rendered per github rules. The content is all about automation. A work in progress.
 
-# build
+# usage
 ```
+# new post
+$ npm run post -- post title with spaces
 # build
 $ npm run build [-- -n posts per page]
-# test
-$ npm test [-- -p port]
-# both
-$ npm run all
+# run test server
+$ npm run server [-- -p port]
+# build and test
+$ npm test
 ```
 
 # features

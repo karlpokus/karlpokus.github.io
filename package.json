@@ -1,12 +1,13 @@
 {
   "name": "karlpokus.github.io",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "blog tool and content about automation and randomness",
   "main": "build.js",
   "scripts": {
+    "post": "node ./lib/poster.js",
     "build": "node ./build.js",
-    "test": "node ./lib/server.js",
-    "all" : "npm run --silent build && npm --silent test"
+    "server": "node ./lib/server.js",
+    "test": "npm run --silent build && npm run --silent server"
   },
   "repository": {
     "type": "git",
