@@ -1,4 +1,13 @@
-The simplest blogging tool I can make under the constraints. *Everything* is static files, so pre-rendered per github rules. The content is all about automation. A work in progress.
+So this is really an exercise in frugailty as in - *how simple can I make it?* Github demands that all data at [username].github.io be static content. So I figured I make a blogging tool with static pages and posts. Sounds like fun. Well here it is.
+
+Note: server-side-rendered pages loads *fast* which is nice.
+
+# features
+- Builds [n] pages from posts
+- sorts posts by `mtime`
+- parses markdown to html
+- pagination
+- assets from /assets
 
 # usage
 ```
@@ -11,11 +20,6 @@ $ npm run server [-- -p port]
 # build and test
 $ npm test
 ```
-
-# features
-- index with n posts @ /
-- page[n] with next n posts @ /public/page[n].html
-- assets @ /assets
 
 # todos
 - [x] get n posts
