@@ -13,10 +13,16 @@ Note: server-side-rendered pages loads *fast* which is nice.
 ```
 # new post
 $ npm run post -- post title with spaces
+
+# search posts
+$ npm run find -- word
+
 # build
 $ npm run build [-- -n posts per page]
+
 # run test server
 $ npm run server [-- -p port]
+
 # build and test
 $ npm test
 ```

@@ -1,9 +1,10 @@
 {
   "name": "karlpokus.github.io",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "blog tool and content about automation and randomness",
   "main": "build.js",
   "scripts": {
+    "find": "node ./lib/search.js",
     "post": "node ./lib/poster.js",
     "build": "node ./build.js",
     "server": "node ./lib/server.js",
