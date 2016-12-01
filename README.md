@@ -41,4 +41,8 @@ $ npm test
 - [x] 404 (nevermind - github won't use it)
 - [x] padding between posts
 - [ ] permalink from post title - requires parsing markdown on the client and filename to be title
-- [ ] maybe checkout [hexo](https://hexo.io/)
+- [x] maybe checkout [hexo](https://hexo.io/) *nope*
+- [ ] gulp
+
+# licence
+?
