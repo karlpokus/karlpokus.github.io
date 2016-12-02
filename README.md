@@ -7,7 +7,7 @@ So.. *how simple can I make it?* Github demands that all data at [username].gith
 - adds pagination to pages
 - assets from /assets
 
-# usage
+# 1.0 usage
 ```bash
 # new post
 $ npm run post -- post title with spaces
@@ -44,6 +44,24 @@ $ npm test
 - [ ] 2.0 - release the blogging tool as a module on npm - *static pages with markdown*
 
 # 2.0 api
+bash
+```bash
+# setup
+$ npm i app -g
+$ mkdir assets posts public # ..and the html somehow
+$ echo "#first post" > posts/firstpost.md
+# build
+$ app -b [-n postsPerPage]
+# run a test server
+$ app -s [-p port]
+# Search posts - title or content
+$ ls posts/ | grep -i [word]
+$ grep -i [word] posts/* --color
+# 5 latest post
+$ ls -t | head -n 5
+```
+
+node
 ```bash
 # install
 $ npm i app -g
