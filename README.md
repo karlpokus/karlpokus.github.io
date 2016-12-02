@@ -1,16 +1,14 @@
-So this is really an exercise in frugailty as in - *how simple can I make it?* Github demands that all data at [username].github.io be static content. So I figured I make a blogging tool with static pages and posts. Sounds like fun. Well here it is.
-
-Note: server-side-rendered pages loads *fast* which is nice.
+So.. *how simple can I make it?* Github demands that all data at [username].github.io be static content. So I figured I make a blogging tool with static pages and posts. Sounds like fun. Well here it is. Note: server-side-rendered pages loads *fast* which is nice.
 
 # features
 - Builds [n] pages from posts
 - sorts posts by `mtime`
 - parses markdown to html
-- pagination
+- adds pagination to pages
 - assets from /assets
 
 # usage
-```
+```bash
 # new post
 $ npm run post -- post title with spaces
 
@@ -40,9 +38,28 @@ $ npm test
 - [x] put css in head style
 - [x] 404 (nevermind - github won't use it)
 - [x] padding between posts
-- [ ] permalink from post title - requires parsing markdown on the client and filename to be title
 - [x] maybe checkout [hexo](https://hexo.io/) *nope*
-- [ ] gulp
+- [ ] gulp?
+- [ ] permalink? Requires (1) filename match post title, (2) generate each post in /post and (3) make h1 clickable to /post/[post]
+- [ ] 2.0 - release the blogging tool as a module on npm - *static pages with markdown*
+
+# 2.0 api
+```bash
+# install
+$ npm i app -g
+# init (Creates folders and whatnot)
+$ app -i
+# new post
+$ app -p title
+# build
+$ app -b [-n postsPerPage]
+# run a test server
+$ app -s [-p port]
+# build and test
+$ app -t [-n postsPerPage] [-p port]
+# search posts
+$ app -f word
+```
 
 # licence
 ?
