@@ -50,16 +50,22 @@ bash
 # setup
 $ npm i app -g
 $ mkdir assets posts public # ..and the html somehow
-$ echo "#first post" > posts/firstpost.md
+$ echo "# first post" > posts/firstpost.md
+
 # build
 $ app -b [-n postsPerPage]
+
 # run a test server
 $ app -s [-p port]
-# Search posts - title or content
-$ ls posts/ | grep -i [word]
+
+# Search post titles
+$ ls posts | grep -i [word]
+
+# Search post content
 $ grep -i [word] posts/* --color
-# 5 latest post
-$ ls -t | head -n 5
+
+# Show 5 latest post
+$ ls -t posts | head -n 5
 ```
 
 node
