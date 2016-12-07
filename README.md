@@ -42,6 +42,7 @@ $ npm test
 - [ ] gulp?
 - [ ] permalink? Requires (1) filename match post title, (2) generate each post in /post and (3) make h1 clickable to /post/[post]
 - [ ] 2.0 - release the blogging tool as a module on npm - *static pages with markdown*
+- [ ] fix post order - mtime works rather bad
 
 # 2.0 api
 bash
