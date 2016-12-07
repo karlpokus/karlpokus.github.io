@@ -1,0 +1,6 @@
+# infinite monkey theorem
+> a monkey hitting keys at random on a typewriter keyboard for an infinite amount of time will almost surely type a given text, such as the complete works of William Shakespeare.
+
+[src](https://en.wikipedia.org/wiki/Infinite_monkey_theorem)
+
+Dawkins was rather fond of the idea too even though it's [misleading as a case for natural selection](https://en.wikipedia.org/wiki/Weasel_program).
