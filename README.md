@@ -66,6 +66,9 @@ $ grep -i [word] posts/* --color
 
 # Show 5 latest post
 $ ls -t posts | head -n 5
+
+# Show a count of posts
+$ tree posts/ | tail -1
 ```
 
 node
