@@ -1,0 +1,2 @@
+# automate the internet
+Connect random api:s with [ifttt](https://ifttt.com/) and [zapier](https://zapier.com/). Anything from iot-devices to social media to spotify. Really simple pub/sub UI:s with recipes containing triggers and actions.
