@@ -1,2 +1,4 @@
 # random id
 <script src="https://gist.github.com/karlpokus/10171d696b55c4cd8bad60a3014aabea.js"></script>
+
+And in one line: cat /proc/sys/kernel/random/uuid
