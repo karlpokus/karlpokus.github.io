@@ -1,0 +1,5 @@
+# randomness through hardware
+
+> /dev/random allows access to environmental noise collected from device drivers and other sources.
+
+[src](https://en.wikipedia.org/wiki//dev/random)
