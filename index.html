@@ -32,26 +32,21 @@
 </head>
 <body>
   <h1 id="header">automation &amp;&amp; randomness</h1>
-  <div class="content"><h1 id="a-cdn-for-npm">a cdn for npm</h1>
-<p><a href="https://unpkg.com/package@version/file">https://unpkg.com/package@version/file</a></p>
-<p><a href="https://unpkg.com/#/">src</a></p>
-<h1 id="random-id">random id</h1>
-<script src="https://gist.github.com/karlpokus/10171d696b55c4cd8bad60a3014aabea.js"></script>
-
-<p>And in one line: cat /proc/sys/kernel/random/uuid</p>
-<h1 id="randomness-through-hardware">randomness through hardware</h1>
-<blockquote>
-<p>/dev/random allows access to environmental noise collected from device drivers and other sources.</p>
-</blockquote>
-<p><a href="https://en.wikipedia.org/wiki//dev/random">src</a></p>
-<h1 id="infinite-monkey-theorem">infinite monkey theorem</h1>
-<blockquote>
-<p>a monkey hitting keys at random on a typewriter keyboard for an infinite amount of time will almost surely type a given text, such as the complete works of William Shakespeare.</p>
-</blockquote>
-<p><a href="https://en.wikipedia.org/wiki/Infinite_monkey_theorem">src</a> and <a href="https://github.com/karlpokus/me-thinks-weasel">demo</a></p>
-<p>Dawkins was rather fond of the idea too even though it&apos;s <a href="https://en.wikipedia.org/wiki/Weasel_program">misleading as a case for natural selection</a>.</p>
-<h1 id="automate-the-internet">automate the internet</h1>
-<p>Connect random api:s with <a href="https://ifttt.com/">ifttt</a> and <a href="https://zapier.com/">zapier</a>. Anything from iot-devices to social media to spotify. Really simple pub/sub UI:s with recipes containing triggers and actions.</p>
+  <div class="content"><h1 id="one-password-for-all-things">one password for all things</h1>
+<p>Secure passwords are important to keep your stuff safe but hard to remember - especially if you need more than one. Apps like <a href="https://1password.com/">1password</a> and <a href="https://www.passwordstore.org/">pass</a> helps you manage this mess by storing them behind a master password. All you need to remember is <em>one</em> password. 1pw is really user friendly and simple to sync across multiple devices. Pass follows the unix philosophy and allows for greater flexibility.</p>
+<h1 id="randomness-through-atmospheric-noise">randomness through atmospheric noise</h1>
+<p><a href="https://www.random.org/">random.org</a></p>
+<h1 id="automatic-agenda-company-weekly-meeting">automatic agenda @company weekly meeting</h1>
+<p>Assuming the company uses Trello for project management, prior to the weekly meeting - each team member adds a common label (like #meeting) to cards in any company board. Once at weekly meeting, use <a href="http://codepen.io/KarlPokus/debug/a1d690fc435a466bbf3637ac65ec193c">tragenda</a> to search for cards by label. Voila! We have an agenda.</p>
+<p>usage @meeting</p>
+<ul>
+<li>Prioritize by re-ordering cards</li>
+<li>Click a card to open it in Trello (also marks the card as done - this does not alter any data in Trello)</li>
+<li>A progressbar shows how many cards are left</li>
+</ul>
+<p>Works on mobile devices. Repo at <a href="https://github.com/karlpokus/tragenda">github</a></p>
+<h1 id="build-your-own-trello-bot">build your own Trello bot</h1>
+<p><a href="https://trello.com/maxblipblop">Max</a> is a trello bot. He reminds users to include @username in comments to send them notifications. He also does some other things. Build your own with <a href="https://github.com/karlpokus/trobot">trobot on github</a>.</p>
 <h1 id="teaching-machine">teaching machine</h1>
 <p><img src="/assets/Skinner_teaching_machine_05.jpg" alt="image"></p>
 <p><a href="https://www.youtube.com/watch?v=jTH3ob1IRFo">video</a></p>
@@ -62,23 +57,24 @@ $ todoris
 add
 $ todoris &apos;add tests&apos; npm
 </code></pre><p><a href="https://github.com/karlpokus/todoris">repo</a></p>
+<h1 id="what-is-automation-">what is automation?</h1>
+<p><img src="http://imgs.xkcd.com/comics/the_general_problem.png" alt="img" title="http://xkcd.com/974/"></p>
 <h1 id="self-management">self-management</h1>
 <p>Automating certain behaviors by performing other behaviors. <a href="http://www.bfskinner.org">Skinner</a> was a master at this.</p>
 <blockquote>
 <p>Fred seemed to dispose of envelopes and junk mail in an especially efficient way/.../When he opened his mail in the morning, he usually positioned his chair and trash can so that the very slightest flick of his wrist did the job. This was no accident, and it was part of the reason he was able to reply to virtually every letter he ever received, even until the end.</p>
 </blockquote>
 <p><a href="http://people.whitman.edu/~herbrawt/classes/390/Epstein.pdf">src</a></p>
-<h1 id="automatic-agenda-company-weekly-meeting">automatic agenda @company weekly meeting</h1>
-<p>Assuming the company uses Trello for project management, prior to the weekly meeting - each team member adds a common label (like #meeting) to cards in any company board. Once at weekly meeting, use <a href="http://codepen.io/KarlPokus/debug/a1d690fc435a466bbf3637ac65ec193c">tragenda</a> to search for cards by label. Voila! We have an agenda.</p>
-<p>usage @meeting</p>
-<ul>
-<li>Prioritize by re-ordering cards</li>
-<li>Click a card to open it in Trello (also marks the card as done - this does not alter any data in Trello)</li>
-<li>A progressbar shows how many cards are left</li>
-</ul>
-<p>Works on mobile devices. Repo at <a href="https://github.com/karlpokus/tragenda">github</a></p>
-<h1 id="bot-vs-bot">bot vs bot</h1>
-<p><img src="/assets/bot_vs_bot.jpg" alt="image"></p>
+<h1 id="automating-secretary-duty-company-weekly-meeting">automating secretary duty @company weekly meeting</h1>
+<p>n people take turns taking notes at the weekly meeting @company. Assuming a consistent group of people over time and no care for holidays - whose turn is it week x?</p>
+<script src="https://gist.github.com/karlpokus/436325a22c882a295ab92e7ec3d098b2.js"></script>
+
+<p>If one does not feel like running the function each week - <a href="https://github.com/karlpokus/max">Max</a> would be happy to help.</p>
+<h1 id="randomness-through-hardware">randomness through hardware</h1>
+<blockquote>
+<p>/dev/random allows access to environmental noise collected from device drivers and other sources.</p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki//dev/random">src</a></p>
 </div>
   <p class="paginator"><a href="/public/page1.html">Next &#x2192;</a></p>
 </body>

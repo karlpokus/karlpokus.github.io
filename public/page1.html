@@ -32,28 +32,33 @@
 </head>
 <body>
   <h1 id="header">automation &amp;&amp; randomness</h1>
-  <div class="content"><h1 id="schedule-meetings-with-a-bot">schedule meetings with a bot</h1>
-<p>Let&apos;s say your in an e-mail thread with 1+ friends and you decide to meet up. Instead of going back and forth over when to schedule - add <a href="https://claralabs.com/">clara</a> to the conversation and let her handle the details. Better yet - if everyone is signed up with clara - let them add her as well and let the bots talk to each other for maximum efficiancy!</p>
-<p>We took a stab at it with <a href="https://github.com/karlpokus/uppsala-hackathon-2016">MIRL</a> at uppsala hackathon 2016.</p>
-<h1 id="automating-eli5">automating ELI5</h1>
-<p>The <a href="http://codepen.io/KarlPokus/debug/KgPVYb">demo</a> features a whitelist of 1000 simple everyday words. Inspired by the beautiful <a href="https://xkcd.com/thing-explainer/">thing explainer</a> but in Swedish - using <a href="http://rl.se/tusen.html">this</a> whitelist.</p>
-<p>usage</p>
-<ul>
-<li>add your text</li>
-<li>get a blacklist</li>
-<li>optionally replace blacklist with synonyms from <a href="http://www.synonymer.se/">this</a> api that match the whitelist.</li>
-</ul>
-<p>Fork on <a href="https://github.com/karlpokus/eli5">github</a></p>
-<h1 id="automating-secretary-duty-company-weekly-meeting">automating secretary duty @company weekly meeting</h1>
-<p>n people take turns taking notes at the weekly meeting @company. Assuming a consistent group of people over time and no care for holidays - whose turn is it week x?</p>
-<script src="https://gist.github.com/karlpokus/436325a22c882a295ab92e7ec3d098b2.js"></script>
+  <div class="content"><h1 id="eli5-why-is-it-impossible-to-generate-truly-random-numbers-with-a-computer-">ELI5: Why is it impossible to generate truly random numbers with a computer?</h1>
+<blockquote>
+<p>The issue stems from the fact that there is nothing random about your computer..</p>
+</blockquote>
+<p>Read more in this <a href="https://www.reddit.com/r/explainlikeimfive/comments/57k9a8/eli5_why_is_it_impossible_to_generate_truly/d8sojf5">awesome thread</a></p>
+<h1 id="randomize-your-cooking">randomize your cooking</h1>
+<p>Use <a href="https://trello.com/butlerbot">butler bot</a> to randomize meals from a Trello board. Add him to your board and put the follwing in a card title.</p>
+<blockquote>
+<p>every friday at [time], move [n] randomly-selected cards from list &quot;Meals&quot; to list &quot;Cook this weekend&quot;</p>
+</blockquote>
+<h1 id="random-id">random id</h1>
+<script src="https://gist.github.com/karlpokus/10171d696b55c4cd8bad60a3014aabea.js"></script>
 
-<p>If one does not feel like running the function each week - <a href="https://github.com/karlpokus/max">Max</a> would be happy to help.</p>
+<p>And in one line: cat /proc/sys/kernel/random/uuid</p>
+<h1 id="automate-the-internet">automate the internet</h1>
+<p>Connect random api:s with <a href="https://ifttt.com/">ifttt</a> and <a href="https://zapier.com/">zapier</a>. Anything from iot-devices to social media to spotify. Really simple pub/sub UI:s with recipes containing triggers and actions.</p>
 <h1 id="commit-message-generator">commit message generator</h1>
 <blockquote>
 <p>Refactored configuration</p>
 </blockquote>
 <p><a href="http://whatthecommit.com/">src</a></p>
+<h1 id="infinite-monkey-theorem">infinite monkey theorem</h1>
+<blockquote>
+<p>a monkey hitting keys at random on a typewriter keyboard for an infinite amount of time will almost surely type a given text, such as the complete works of William Shakespeare.</p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Infinite_monkey_theorem">src</a> and <a href="https://github.com/karlpokus/me-thinks-weasel">demo</a></p>
+<p>Dawkins was rather fond of the idea too even though it&apos;s <a href="https://en.wikipedia.org/wiki/Weasel_program">misleading as a case for natural selection</a>.</p>
 <h1 id="randomly-created-album-covers">randomly created album covers</h1>
 <p>A bot for <a href="https://www.reddit.com/r/fakealbumcovers/">r/fakealbumcovers</a>. Needs some work. Particularly the fonts and their placement. Fork on <a href="https://github.com/karlpokus/fakealbumcover-bot">github</a>.</p>
 <p>the Rules</p>
@@ -63,25 +68,23 @@
 <li>5th img from <a href="https://www.flickr.com/explore/interesting/7days/">flickr</a></li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/karlpokus/fakealbumcover-bot/master/imgs/test.jpg" alt="image"></p>
-<h1 id="eli5-why-is-it-impossible-to-generate-truly-random-numbers-with-a-computer-">ELI5: Why is it impossible to generate truly random numbers with a computer?</h1>
-<blockquote>
-<p>The issue stems from the fact that there is nothing random about your computer..</p>
-</blockquote>
-<p>Read more in this <a href="https://www.reddit.com/r/explainlikeimfive/comments/57k9a8/eli5_why_is_it_impossible_to_generate_truly/d8sojf5">awesome thread</a></p>
+<h1 id="automating-eli5">automating ELI5</h1>
+<p>The <a href="http://codepen.io/KarlPokus/debug/KgPVYb">demo</a> features a whitelist of 1000 simple everyday words. Inspired by the beautiful <a href="https://xkcd.com/thing-explainer/">thing explainer</a> but in Swedish - using <a href="http://rl.se/tusen.html">this</a> whitelist.</p>
+<p>usage</p>
+<ul>
+<li>add your text</li>
+<li>get a blacklist</li>
+<li>optionally replace blacklist with synonyms from <a href="http://www.synonymer.se/">this</a> api that match the whitelist.</li>
+</ul>
+<p>Fork on <a href="https://github.com/karlpokus/eli5">github</a></p>
 <h1 id="diceman">diceman</h1>
 <blockquote>
 <p>It&apos;s the way a man chooses to limit himself that determines his character. A man without habits, consistency, redundancy - and hence boredom - is not human. He&apos;s insane.</p>
 </blockquote>
 <p><img src="/assets/diceman_cover.jpg" alt="image"></p>
-<h1 id="randomize-your-cooking">randomize your cooking</h1>
-<p>Use <a href="https://trello.com/butlerbot">butler bot</a> to randomize meals from a Trello board. Add him to your board and put the follwing in a card title.</p>
-<blockquote>
-<p>every friday at [time], move [n] randomly-selected cards from list &quot;Meals&quot; to list &quot;Cook this weekend&quot;</p>
-</blockquote>
-<h1 id="randomness-through-atmospheric-noise">randomness through atmospheric noise</h1>
-<p><a href="https://www.random.org/">random.org</a></p>
-<h1 id="build-your-own-trello-bot">build your own Trello bot</h1>
-<p><a href="https://trello.com/maxblipblop">Max</a> is a trello bot. He reminds users to include @username in comments to send them notifications. He also does some other things. Build your own with <a href="https://github.com/karlpokus/trobot">trobot on github</a>.</p>
+<h1 id="schedule-meetings-with-a-bot">schedule meetings with a bot</h1>
+<p>Let&apos;s say your in an e-mail thread with 1+ friends and you decide to meet up. Instead of going back and forth over when to schedule - add <a href="https://claralabs.com/">clara</a> to the conversation and let her handle the details. Better yet - if everyone is signed up with clara - let them add her as well and let the bots talk to each other for maximum efficiancy!</p>
+<p>We took a stab at it with <a href="https://github.com/karlpokus/uppsala-hackathon-2016">MIRL</a> at uppsala hackathon 2016.</p>
 </div>
   <p class="paginator"><a href="/">&#x2190; Prev</a> | <a href="/public/page2.html">Next &#x2192;</a></p>
 </body>
