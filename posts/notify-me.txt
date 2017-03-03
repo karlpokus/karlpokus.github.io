@@ -1,0 +1,4 @@
+# notify me
+> get notified at your favorite channel when your topic gets mentioned on social media, reddit, blogs, news etc.
+
+[src](https://notify.ly/)
